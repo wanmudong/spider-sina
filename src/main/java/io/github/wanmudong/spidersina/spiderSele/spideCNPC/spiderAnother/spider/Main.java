@@ -39,20 +39,25 @@ public class Main {
      *
      * uid 3591355593   weiboid  HqjSwFgpz   4362729449834537   16268页  吴亦凡微博大碗宽面   存储在wuyifan_comment_pc_cn
      *
-     *
+     *uid 6423838632  weiboid  Hpin3gYAi                       4486页   蔡徐坤工作室律师函    存储在cxk_comment_pc_cn
      *
      */
-    private static String uid = "3591355593";
+    private static String uid = "6423838632";
 
     /**
      * 对应微博id
      */
-    private static String weiboId = "HqjSwFgpz";
+    private static String weiboId = "Hpin3gYAi";
 
     /**
      *  这里设置对应微博评论的最大页数
      */
-    private static int MAX_COMMENT_PAGE = 16268;
+    private static int MAX_COMMENT_PAGE = 4486;
+
+//    /**
+//     *  这里设置对应存储的表
+//     */
+//    private static int MAX_COMMENT_PAGE = 4486;
 
     public static void main(String[] args) throws InterruptedException, SQLException, ClassNotFoundException {
         /**

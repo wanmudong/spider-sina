@@ -16,7 +16,6 @@ import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-import static io.github.wanmudong.spidersina.spiderSele.constant.LinkConstant.WEIBO_COMMENT_ANOTHER_PC_CN;
 import static io.github.wanmudong.spidersina.spiderSele.constant.LinkConstant.WEIBO_REPOST_ANOTHER_PC_CN;
 
 /**

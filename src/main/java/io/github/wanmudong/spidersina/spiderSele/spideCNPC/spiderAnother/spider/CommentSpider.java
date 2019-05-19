@@ -100,7 +100,7 @@ public class CommentSpider {
                     listDoc.add(document);
                 }
 
-                MongoDBUtil.insertListDocument(listDoc,"wuyifan_comment_pc_cn");
+                MongoDBUtil.insertListDocument(listDoc,"cxk_comment_pc_cn");
 
                 log.info("插入第"+page+"页的评论数据");
 
