@@ -11,6 +11,7 @@
     <groupId>io.github.wanmudong</groupId>
     <artifactId>spider-sina</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>spider-sina</name>
     <description>spider for sina</description>
 
@@ -25,6 +26,10 @@
         <fastjson.version>1.2.56</fastjson.version>
         <commons-io.version>2.6</commons-io.version>
         <commons-lang3.version>3.8.1</commons-lang3.version>
+        <selenium-java.version>3.4.0</selenium-java.version>
+        <mysql.version>6.0.6</mysql.version>
+        <mybatis.version>3.4.6</mybatis.version>
+        <mongodb.version>3.0.4</mongodb.version>
     </properties>
 
 
@@ -55,7 +60,11 @@
             <artifactId>gecco</artifactId>
             <version>1.0.8</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium-java.version}</version>
+        </dependency>
         <!-- commons-io -->
         <dependency>
             <groupId>commons-io</groupId>
@@ -100,6 +109,27 @@
             <artifactId>commons-lang3</artifactId>
             <version>${commons-lang3.version}</version>
         </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>${mongodb.version}</version>
+        </dependency>
+
 
     </dependencies>
 
