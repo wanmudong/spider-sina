@@ -152,6 +152,7 @@ public class Main {
         while (true) {
 
             CommentSpider commentSpider;
+            TopicSpider topicSpider;
 
             //如果对应页数没有数据，尝试三次，便爬取下一页数据
             if (x == MAX_BROWSER_RETRY_NUM){
@@ -160,13 +161,15 @@ public class Main {
             }
 
             try {
-                commentSpider = new CommentSpider(webDrivers[n], weiboId,uid,page);
-                page = commentSpider.start();
+//                commentSpider = new CommentSpider(webDrivers[n], weiboId,uid,page);
+//                page = commentSpider.start();
+                topicSpider = new TopicSpider(webDrivers[n], uid,page);
+                page = topicSpider.start();
             }catch (Exception e){
                 e.printStackTrace();
             }
             //这里设置对应微博评论的最大页数
-            if (page>MAX_COMMENT_PAGE){
+            if (page > MAX_COMMENT_PAGE){
                 break;
             }
 

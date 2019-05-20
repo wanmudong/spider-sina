@@ -31,20 +31,19 @@ import static io.github.wanmudong.spidersina.spiderSele.constant.LinkConstant.*;
 public class TopicSpider {
     WebDriver driver;
 
-    String weiboId;
+//    String weiboId;
 
-    String uid;
+    String topic;
 
     int page;
 
 
     private final static Logger log = LoggerFactory.getLogger(WeiBoSpider.class);
 
-    public TopicSpider(WebDriver driver,String weiboId,String uid,int page){
+    public TopicSpider(WebDriver driver,String topic,int page){
         this.driver = driver;
-        this.weiboId = weiboId;
         this.page = page;
-        this.uid = uid;
+        this.topic = topic;
     }
 
     public int start() throws InterruptedException {
