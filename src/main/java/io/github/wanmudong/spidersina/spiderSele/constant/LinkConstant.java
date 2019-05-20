@@ -81,4 +81,13 @@ public class LinkConstant {
      * https://weibo.cn/repost/HiAzT4u0y?uid=3591355593&rl=0&page=1
      */
     public static final String WEIBO_REPOST_ANOTHER_PC_CN = "https://weibo.cn/repost";
+
+
+    /**
+     *微博特定话题  uid即为用户id，page递增即可  HiAzT4u0y 为微博id
+     * 移动版
+     * https://m.weibo.cn/search?containerid=231522type%3D1%26t%3D10%26q%3D%23%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%23&extparam=%23%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%23&luicode=10000011&lfid=100103type%3D38%26q%3D%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%26t%3D0
+     * https://m.weibo.cn/api/container/getIndex?containerid=231522type%3D1%26t%3D10%26q%3D%23%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%23&extparam=%23%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%23&luicode=10000011&lfid=100103type%3D38%26q%3D%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%26t%3D0&page_type=searchall&page=1232
+     */
+    public static final String WEIBO_TOPIC_WUYIFAN_DAWANKUANMIAN_INDEX = "https://m.weibo.cn/api/container/getIndex?containerid=231522type%3D1%26t%3D10%26q%3D%23%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%23&extparam=%23%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%23&luicode=10000011&lfid=100103type%3D38%26q%3D%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%26t%3D0&page_type=searchall&page=";
 }

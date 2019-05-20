@@ -1,14 +1,7 @@
 package io.github.wanmudong.spidersina.spiderSele;
 
-import io.github.wanmudong.dataBase.MybatisSession;
-import io.github.wanmudong.dataBase.SqlConnect;
-import io.github.wanmudong.model.Cookies;
 import io.github.wanmudong.spidersina.spiderSele.spider.CommentSpider;
-import io.github.wanmudong.spidersina.spiderSele.spider.WeiBoSpider;
-import org.apache.ibatis.session.SqlSession;
-import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,9 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.Set;
 
 /**
  * @author ：wanmudong

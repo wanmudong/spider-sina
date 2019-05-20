@@ -145,16 +145,12 @@ public class Main {
 
         }
 
-
-
-
         int n = ra.nextInt(MAX_BROWSER_NUM);
 
         int x=0;
 
         while (true) {
 
-//            boolean success = false;
             CommentSpider commentSpider;
 
             //如果对应页数没有数据，尝试三次，便爬取下一页数据
@@ -173,9 +169,11 @@ public class Main {
             if (page>MAX_COMMENT_PAGE){
                 break;
             }
+
             x++;
             n++;
             n %= MAX_BROWSER_NUM;
+
         }
     }
 }

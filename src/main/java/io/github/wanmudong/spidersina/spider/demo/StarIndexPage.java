@@ -12,7 +12,7 @@ import com.geccocrawler.gecco.request.HttpGetRequest;
  */
 public class StarIndexPage{
     public static void main(String[] args) {
-        String url = "http://ent.sina.com.cn/ku/star_search_index.d.html"; //想要爬取的网站的首页地址
+        String url = "http://ent.sina.com.cn/ku/star_search_index.d.html?page=1"; //想要爬取的网站的首页地址
         HttpGetRequest start = new HttpGetRequest(url); //获取网站请求
         start.setCharset("UTF-8");
         GeccoEngine.create() //创建搜索引擎

@@ -62,12 +62,7 @@ public class CommentSpider {
                     Thread.sleep(1000);
 
                     return page;
-//                    int pub = driver.getCurrentUrl().indexOf("pub");
-//                    if (pub>-1){
-//                        return  false;
-//                    }else {
-//                        return true;
-//                    }
+
                 }
                 String pageSource = driver.getPageSource();
 
