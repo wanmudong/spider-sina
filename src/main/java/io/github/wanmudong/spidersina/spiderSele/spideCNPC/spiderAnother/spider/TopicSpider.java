@@ -100,10 +100,15 @@ public class TopicSpider {
                 }
 
             }
+            if(listDoc.isEmpty()){
+                log.info("第"+page+"页的话题微博数据为空");
+            }else {
+                MongoDBUtil.insertListDocument(listDoc,"wuyifan_dawankuanmian_topic_pc_cn");
 
-            MongoDBUtil.insertListDocument(listDoc,"wuyifan_dawankuanmian_topic_pc_cn");
+                log.info("插入第"+page+"页的话题微博数据");
+            }
 
-            log.info("插入第"+page+"页的话题微博数据");
+
 
             page++;
         }
