@@ -20,10 +20,6 @@ import java.util.Random;
 public class Main {
     //微博存在后门，即微博移动端不受PC端游客访问的限制
     //通过cookie进行访问
-
-    private static int page=0;
-
-
     /**
      *  这里设置对应开启浏览器的数量
      */
@@ -50,9 +46,11 @@ public class Main {
     private static String weiboId = "Hpin3gYAi";
 
     /**
-     *  这里设置对应微博评论的最大页数
+     *  这里设置对应最大页数
      */
-    private static int MAX_COMMENT_PAGE = 4486;
+    private static int MAX_COMMENT_PAGE = 30000;
+
+    private static int page=1;
 
 //    /**
 //     *  这里设置对应存储的表
@@ -122,7 +120,7 @@ public class Main {
             //声明chromeoptions,主要是给chrome设置参数
             ChromeOptions options = new ChromeOptions();
             //设置user agent为手机端
-            options.addArguments(userAgentArr[1]);
+            options.addArguments(userAgentArr[j]);
             //调用chrome
             webDrivers[j] = new ChromeDriver(options);
             WebDriver driver = webDrivers[j];
@@ -141,8 +139,8 @@ public class Main {
             WebElement loginPassword = driver.findElement(By.id("loginPassword"));
             WebElement loginAction = driver.findElement(By.id("loginAction"));
 
-            loginName.sendKeys(nameArr[j]);
-            loginPassword.sendKeys(passwordArr[j]);
+            loginName.sendKeys(nameArr[10-j]);
+            loginPassword.sendKeys(passwordArr[10-j]);
             loginAction.click();
 
 

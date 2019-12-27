@@ -54,6 +54,8 @@ public class TopicSpider {
 
             String hot = WEIBO_TOPIC_WUYIFAN_DAWANKUANMIAN_INDEX +page;
 
+            Thread.sleep(410);
+
             driver.get(hot);
 
             try {
@@ -66,11 +68,27 @@ public class TopicSpider {
             String pre = driver.findElement(By.tagName("pre")).getText();
             JSONObject jsonObject = JSONObject.parseObject(pre);
 
+
+            int ok = 1;
+
+            ok = jsonObject.getInteger("ok");
+            if (ok == 0){
+                log.info("第"+page+"页的话题微博数据为空，换个浏览器，爬取下一页");
+                page = page + 10;
+                return page;
+            }
+
             List<org.bson.Document> listDoc = new ArrayList<>();
             /**
              * 爬取内容 ：微博id，微博主体，发博时间，发博来源，点赞，评论，转发数，用户个人信息（主页，昵称，简介，性别，关注数，粉丝数，微博数，认证情况）
              */
-            JSONArray weiboCards =  jsonObject.getJSONObject("data").getJSONArray("cards");
+            JSONArray weiboCards = new JSONArray();
+            try {
+                weiboCards  = jsonObject.getJSONObject("data").getJSONArray("cards");
+            }catch (NullPointerException ne){
+                //此时无数据
+                return page;
+            }
             if (weiboCards.size() > 0) {
                 for (int i = 0; i < weiboCards.size(); i++) {
 
@@ -103,7 +121,7 @@ public class TopicSpider {
             if(listDoc.isEmpty()){
                 log.info("第"+page+"页的话题微博数据为空");
             }else {
-                MongoDBUtil.insertListDocument(listDoc,"wuyifan_dawankuanmian_topic_pc_cn");
+                MongoDBUtil.insertListDocument(listDoc,"cxk_geibzhanfalvshihan_topic_pc_cn");
 
                 log.info("插入第"+page+"页的话题微博数据");
             }

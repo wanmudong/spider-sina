@@ -88,6 +88,18 @@ public class LinkConstant {
      * 移动版
      * https://m.weibo.cn/search?containerid=231522type%3D1%26t%3D10%26q%3D%23%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%23&extparam=%23%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%23&luicode=10000011&lfid=100103type%3D38%26q%3D%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%26t%3D0
      * https://m.weibo.cn/api/container/getIndex?containerid=231522type%3D1%26t%3D10%26q%3D%23%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%23&extparam=%23%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%23&luicode=10000011&lfid=100103type%3D38%26q%3D%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%26t%3D0&page_type=searchall&page=1232
+     *
+     *
+     * https://m.weibo.cn/api/container/getIndex?containerid=231522type%3D1%26t%3D10%26q%3D%23%E8%94%A1%E5%BE%90%E5%9D%A4%E7%BB%99B%E7%AB%99%E5%8F%91%E5%BE%8B%E5%B8%88%E5%87%BD%23&extparam=%23%E8%94%A1%E5%BE%90%E5%9D%A4%E7%BB%99B%E7%AB%99%E5%8F%91%E5%BE%8B%E5%B8%88%E5%87%BD%23&luicode=10000011&lfid=100103type%3D1%26q%3D%E8%94%A1%E5%BE%90%E5%9D%A4%E7%BB%99b%E7%AB%99%E5%8F%91%E5%BE%8B%E5%B8%88%E5%87%BD&page_type=searchall&page=2
+     *
+     * 大碗宽面
+     * https://m.weibo.cn/api/container/getIndex?containerid=100103type%3D1%26q%3D%23%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%23&page_type=searchall&page=3
+     * 蔡徐坤给b站发律师函
+     * https://m.weibo.cn/api/container/getIndex?containerid=100103type%3D61%26q%3D%23%E8%94%A1%E5%BE%90%E5%9D%A4%E7%BB%99B%E7%AB%99%E5%8F%91%E5%BE%8B%E5%B8%88%E5%87%BD%23%26t%3D0&page_type=searchall&page=2
+     *
      */
-    public static final String WEIBO_TOPIC_WUYIFAN_DAWANKUANMIAN_INDEX = "https://m.weibo.cn/api/container/getIndex?containerid=231522type%3D1%26t%3D10%26q%3D%23%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%23&extparam=%23%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%23&luicode=10000011&lfid=100103type%3D38%26q%3D%E5%90%B4%E4%BA%A6%E5%87%A1%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2%26t%3D0&page_type=searchall&page=";
+    public static final String WEIBO_TOPIC_WUYIFAN_DAWANKUANMIAN_INDEX = "https://m.weibo.cn/api/container/getIndex?" +
+            "containerid=231522type%3D1%26t%3D10%26q%3D%23%E8%94%A1%E5%BE%90%E5%9D%A4%E7%BB%99B%E7%AB%99%E5%8F%91%E5%BE%8B%E5%B8%88%E5%87%BD%23" +
+            "&extparam=%23%E8%94%A1%E5%BE%90%E5%9D%A4%E7%BB%99B%E7%AB%99%E5%8F%91%E5%BE%8B%E5%B8%88%E5%87%BD%23&luicode=10000011&lfid=100103type" +
+            "%3D1%26q%3D%E8%94%A1%E5%BE%90%E5%9D%A4%E7%BB%99b%E7%AB%99%E5%8F%91%E5%BE%8B%E5%B8%88%E5%87%BD&page_type=searchall&page=";
 }

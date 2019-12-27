@@ -32,9 +32,8 @@ public class MongoDBUtil {
         }
         //连接到 mongodb 服务
         MongoClient mongoClient = new MongoClient("localhost", 27017);
-
         //连接到数据库
-         mongoDatabase = mongoClient.getDatabase("weibo");
+         mongoDatabase = mongoClient.getDatabase("douban");
 
         //返回连接数据库对象
         return mongoDatabase;

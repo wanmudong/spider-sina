@@ -37,16 +37,9 @@ public class CommentSpider {
 
     public boolean start() throws InterruptedException {
         List<JSONObject> list = MongoDBUtil.selectJsonFromMongoDB(null, "weibo");
-//        String weiboId;
         WebDriverWait wait = new WebDriverWait(driver,10,1);
 
-//        for (JSONObject json:list){
-//            //只有card_type==9的微博才有评论
-//            String  card_type= json.getString("card_type");
-//            if (!"9".equals(card_type)){
-//                continue;
-//            }
-//            weiboId = json.getString("itemid").split("_")[2];
+
             while (true) {
                 Thread.sleep(410);
 
