@@ -28,7 +28,7 @@
         <commons-lang3.version>3.8.1</commons-lang3.version>
         <selenium-java.version>3.4.0</selenium-java.version>
         <mysql.version>6.0.6</mysql.version>
-        <mybatis.version>3.4.6</mybatis.version>
+        <mybatis.version>3.5.6</mybatis.version>
         <mongodb.version>3.0.4</mongodb.version>
     </properties>
 
